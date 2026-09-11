@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "version": "0.4.3",
+  "tag": "v0.4.3",
+  "source_repository": "pupujiang-org/pupu-danmu",
+  "source_tag": "v0.4.3",
+  "source_commit": "2b641c7e3ab38771c9302d8cf7ea4bbd82f15b2b",
+  "source_release_repository": "pupujiang-org/pupu-danmu",
+  "public_release_repository": "pupujiang-org/pupu-danmu-releases",
+  "assets": [
+    "pupu-danmu-radar-windows-x86_64-v0.4.3-setup.exe",
+    "pupu-danmu-radar-windows-x86_64-v0.4.3-portable.zip",
+    "pupu-danmu-radar-v0.4.3-source.zip",
+    "update.json",
+    "changelog.json",
+    "SHA256SUMS.txt"
+  ]
+}
