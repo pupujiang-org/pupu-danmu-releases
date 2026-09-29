@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "channel": "stable",
+  "latest_version": "0.4.4",
+  "published_at": "2026-09-16T01:01:37+08:00",
+  "summary": {
+    "title": "0.4.4 更新",
+    "description": "新增「按弹幕密度自动发送弹幕」：直播间的弹幕冷清时可以自动发一条话术保持活跃，弹幕多起来自动停手。",
+    "sections": [
+      {
+        "type": "feature",
+        "title": "新增",
+        "items": [
+          "每条监控会话都可以单独开启「按弹幕密度自动发送」：启用后程序按当前弹幕密度自动发言，弹幕稀疏时按设定节奏发送，弹幕密集时自动暂停，滚动一小时内还有总条数上限。发送间隔、稀疏/密集阈值与每小时上限都可以在该会话的「弹幕设置」里调整，默认值刻意保守；不确定时建议保持默认。",
+          "内置弹幕库「布料直播 · 买家咨询」，含 2000 条买家视角的互动话术（材质成分、织法工艺、价格优惠、颜色与库存、用布量、洗护与做工、用途搭配，以及花边、主观感受和直播间日常互动），开箱即可使用。",
+          "支持导入自己的弹幕库：选择一个文本文件（每行一条），导入后按会话选用；导入时可自定义名称，也可随时删除。自定义弹幕库与内置库共用同一套内容清洗规则，导入时看到的内容就是实际会发送的内容。",
+          "监控会话列表会直接标出哪些会话开启了自动发送，避免在不知情的情况下以本人账号发出内容。"
+        ]
+      },
+      {
+        "type": "improvement",
+        "title": "优化",
+        "items": [
+          "会话配置的「本会话设置」新增自动发送开关与节奏参数，与命中规则、打印输出、弹幕记录并列，明确区分「会写本地记录」和「会向直播间发言」两类开关。"
+        ]
+      },
+      {
+        "type": "compatibility",
+        "title": "依赖与兼容性",
+        "items": [
+          "自动发送仅支持**账号身份**：匿名身份可以照常读取弹幕，但抖音不允许访客发言，因此匿名会话不会启用该功能。",
+          "该功能默认关闭，旧会话不受影响，无需任何迁移即可升级。",
+          "自动发送开关与节奏参数属于启动快照，运行中修改会在下次启动本会话时生效；开关运行在已选定的直播间与访问身份上，不会在运行中静默切换。"
+        ]
+      },
+      {
+        "type": "breaking",
+        "title": "重要变更",
+        "items": [
+          "自动发送会以当前账号真实发出弹幕内容。请遵守直播间与平台规则，并结合自己的经营节奏调整发送频率；把间隔调到很短会显著增加账号被限制的风险。",
+          "如果页面要求完成验证码或重新登录，程序会立即停止本场自动发送并在状态栏提示，弹幕监控本身不受影响，可以继续使用。该提示在状态栏中标记为可恢复，若验证或登录在浏览器窗口内完成，重新启动本会话即可恢复自动发送。"
+        ]
+      }
+    ]
+  },
+  "changelog_url": "https://github.com/pupujiang-org/pupu-danmu-releases/releases/download/v0.4.4/changelog.json",
+  "packages": [
+    {
+      "distribution": "installer",
+      "platform": "windows",
+      "arch": "x86_64",
+      "filename": "pupu-danmu-radar-windows-x86_64-v0.4.4-setup.exe",
+      "url": "https://github.com/pupujiang-org/pupu-danmu-releases/releases/download/v0.4.4/pupu-danmu-radar-windows-x86_64-v0.4.4-setup.exe",
+      "sha256": "d2c32853a4264efe6f735d6e4489d80ffafc691ddb48ea6ccbecea40eba62039",
+      "size": 221093063
+    },
+    {
+      "distribution": "portable",
+      "platform": "windows",
+      "arch": "x86_64",
+      "filename": "pupu-danmu-radar-windows-x86_64-v0.4.4-portable.zip",
+      "url": "https://github.com/pupujiang-org/pupu-danmu-releases/releases/download/v0.4.4/pupu-danmu-radar-windows-x86_64-v0.4.4-portable.zip",
+      "sha256": "8408d4ef714ed65b3e5173863a66a6f77da5fc48e6db29092b10f61dac14996e",
+      "size": 313561601
+    }
+  ],
+  "source": {
+    "filename": "pupu-danmu-radar-v0.4.4-source.zip",
+    "url": "https://github.com/pupujiang-org/pupu-danmu-releases/releases/download/v0.4.4/pupu-danmu-radar-v0.4.4-source.zip",
+    "sha256": "b9e9ecf7731a686214e6f536c4f5df6be97759cae01904bb12f924f90333bbda",
+    "license": "GPL-3.0-or-later"
+  }
+}
