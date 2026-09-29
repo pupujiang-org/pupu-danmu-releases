@@ -1,0 +1,57 @@
+{
+  "schema_version": 3,
+  "channel": "beta",
+  "latest_version": "0.5.0b3",
+  "published_at": "2026-09-29T23:07:53+08:00",
+  "summary": {
+    "title": "0.5.0b3 更新",
+    "description": "新增结构化 JSONL 运行日志，可按进程会话、监控场次、采集、后台任务和请求编号串联关键事件；日志会过滤弹幕正文、打印正文、提示词及凭据。",
+    "sections": [
+      {
+        "type": "feature",
+        "title": "新增",
+        "items": [
+          "新增结构化 JSONL 运行日志，可按进程会话、监控场次、采集、后台任务和请求编号串联关键事件；日志会过滤弹幕正文、打印正文、提示词及凭据。"
+        ]
+      },
+      {
+        "type": "improvement",
+        "title": "优化",
+        "items": [
+          "优化多监控会话下的 AI 自动发送：按直播间协调参与状态和上下文，减少跨会话重复回应，并改善低频直播间的发送节奏。",
+          "优化单场复盘与跨场趋势分析：先保存本地结果，再独立生成可选 AI 补充；AI 服务失败时保留本地结果。",
+          "优化发行版浏览器运行环境，固定携带与 Playwright 配套的官方无品牌 Chromium 版本。",
+          "优化更新检查：按稳定版和测试版分别获取清单，对临时网络错误重试，并使用对应通道缓存的有效清单。"
+        ]
+      },
+      {
+        "type": "fix",
+        "title": "修复",
+        "items": [
+          "修复切换监控场次后重复弹幕诊断显示错位或丢失的问题。"
+        ]
+      }
+    ]
+  },
+  "changelog_url": "https://github.com/pupujiang-org/pupu-danmu-releases/releases/download/v0.5.0b3/changelog.json",
+  "packages": [
+    {
+      "distribution": "installer",
+      "platform": "windows",
+      "arch": "x86_64",
+      "filename": "pupu-danmu-radar-windows-x86_64-v0.5.0b3-setup.exe",
+      "url": "https://github.com/pupujiang-org/pupu-danmu-releases/releases/download/v0.5.0b3/pupu-danmu-radar-windows-x86_64-v0.5.0b3-setup.exe",
+      "sha256": "0454dc17b7eb9de6130a73939ccbe8c14ef4202d4f1dc1f4f773a55a1f5e59fb",
+      "size": 326366987
+    },
+    {
+      "distribution": "portable",
+      "platform": "windows",
+      "arch": "x86_64",
+      "filename": "pupu-danmu-radar-windows-x86_64-v0.5.0b3-portable.zip",
+      "url": "https://github.com/pupujiang-org/pupu-danmu-releases/releases/download/v0.5.0b3/pupu-danmu-radar-windows-x86_64-v0.5.0b3-portable.zip",
+      "sha256": "77a16183ac7b173d770079ee3809989065c4cbc32a57ede007e375f16f5915dc",
+      "size": 469283673
+    }
+  ]
+}
